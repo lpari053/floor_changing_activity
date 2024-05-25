@@ -1,0 +1,27 @@
+  
+  
+80 
+au dessus de 0.020 
+ : brute_xyz 9 : ['gyr_arc', 'acc_y_aad', 'acc_y_mean', 'acc_z_sma', 'mag_x_std', 'mag_y_std', 'baro_kurt', 'baro_sma', 'nb_step'] \n [0.04028366 0.2296982  0.05519345 0.0908596  0.11313747 0.05467072
+ 0.02122953 0.06629239 0.06409042] 
+ 
+  
+  
+160 
+au dessus de 0.020 
+ : brute_xyz 9 : ['acc_y_mean', 'acc_y_skew', 'fcc_y_sma', 'mag_x_std', 'mag_y_aad', 'mag_z_mean', 'baro_kurt', 'baro_sma', 'nb_step'] \n [0.0327622  0.03121523 0.24963224 0.06759574 0.02748463 0.0396706
+ 0.0366124  0.20155673 0.07622335] 
+ 
+  
+  
+320 
+au dessus de 0.020 
+ : brute_xyz 6 : ['acc_y_mean', 'mag_x_std', 'mag_z_aad', 'baro_kurt', 'baro_sma', 'nb_step'] \n [0.03745276 0.10645526 0.02136366 0.06911161 0.20358855 0.33002866] 
+ 
+  
+  
+400 
+au dessus de 0.020 
+ : brute_xyz 7 : ['acc_y_mean', 'mag_x_kurt', 'mag_x_sma', 'mag_z_sma', 'baro_kurt', 'baro_sma', 'nb_step'] \n [0.04025672 0.03131062 0.11741764 0.02547143 0.0466865  0.23675518
+ 0.33382205] 
+ 

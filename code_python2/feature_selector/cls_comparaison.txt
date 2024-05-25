@@ -1,0 +1,52 @@
+    
+80 
+ au dessus de 0.3 40 : Index(['acc_y_std', 'gyr_y_sma', 'acc_x_std', 'gyr_z_std',
+       'mag_z_first_peak_index', 'gyr_z_second_peak_value', 'acc_x_aad',
+       'gyr_x_second_peak_value', 'gyr_y_second_peak_value', 'acc_y_aad',
+       'baro_first_peak_value', 'gyr_z_second_peak_index', 'gyr_y_std',
+       'gyr_x_second_peak_index', 'acc_z_second_peak_index',
+       'baro_second_peak_value', 'gyr_y_second_peak_index',
+       'mag_y_first_peak_index', 'acc_x_second_peak_index', 'gyr_x_std',
+       'acc_y_second_peak_index', 'acc_x_second_peak_value', 'acc_z_sma',
+       'baro_first_peak_index', 'mag_x_first_peak_index',
+       'mag_y_second_peak_index', 'gyr_x_sma', 'mag_arc',
+       'acc_y_second_peak_value', 'mag_z_second_peak_index',
+       'mag_x_second_peak_index', 'baro_mean', 'baro_second_peak_index',
+       'acc_z_second_peak_value', 'fcc_y_sma', 'acc_x_sma', 'gyr_z_sma',
+       'acc_arc', 'nb_step', 'mode_numero'],
+      dtype='object') 
+ [0.30274334 0.30770419 0.31012441 0.31333101 0.3136948  0.31425879
+ 0.3159448  0.31771974 0.32130581 0.32137852 0.32861644 0.34792055
+ 0.3514906  0.3524786  0.35902322 0.37137362 0.37319043 0.37405623
+ 0.38043949 0.38120878 0.38137818 0.39878606 0.40853009 0.40966111
+ 0.41193504 0.4171022  0.41848021 0.41874382 0.4265892  0.43159255
+ 0.4317561  0.43980181 0.44270838 0.45017621 0.46870451 0.51277181
+ 0.52157796 0.5353062  0.56366623 1.        ] 
+ 
+    
+160 
+ au dessus de 0.3 11 : Index(['gyr_z_aad', 'gyr_z_sma', 'acc_x_std', 'acc_x_aad', 'acc_x_sma',
+       'acc_arc', 'acc_y_std', 'fcc_y_sma', 'acc_y_aad', 'nb_step',
+       'mode_numero'],
+      dtype='object') 
+ [0.33051679 0.33051691 0.34770132 0.35937634 0.35937641 0.36444855
+ 0.36709815 0.37848944 0.37848955 0.44616974 1.        ] 
+ 
+    
+320 
+ au dessus de 0.3 8 : Index(['acc_arc', 'acc_x_sma', 'acc_y_std', 'acc_y_aad', 'gyr_z_sma',
+       'fcc_y_sma', 'nb_step', 'mode_numero'],
+      dtype='object') 
+ [0.30726674 0.33445611 0.39801057 0.40766129 0.40787133 0.4178723
+ 0.48140444 1.        ] 
+ 
+    
+400 
+ au dessus de 0.3 13 : Index(['mag_z_mean', 'acc_x_std', 'acc_x_aad', 'acc_x_sma', 'acc_arc',
+       'gyr_arc', 'gyr_z_aad', 'gyr_z_sma', 'acc_y_std', 'fcc_y_sma',
+       'acc_y_aad', 'nb_step', 'mode_numero'],
+      dtype='object') 
+ [0.30771597 0.34454211 0.37354548 0.3735455  0.3848698  0.39666958
+ 0.40681773 0.4068178  0.41259852 0.42676103 0.42676115 0.48584792
+ 1.        ] 
+ 

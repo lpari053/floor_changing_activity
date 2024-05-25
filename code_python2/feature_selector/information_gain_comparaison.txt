@@ -1,0 +1,32 @@
+ 
+80   
+  au dessus de 0.5 brute_xyz 11:   ['acc_y_mean' 'acc_z_mean' 'acc_y_std' 'fcc_y_sma' 'acc_arc' 'acc_y_aad'
+ 'acc_z_aad' 'acc_z_std' 'nb_step' 'acc_z_sma' 'acc_x_mean'] \n [0.85777256 0.73300201 0.6828087  0.67892287 0.67555689 0.66870419
+ 0.62577103 0.61782522 0.61690772 0.61598871 0.51952948] 
+ 
+ 
+ 
+160   
+  au dessus de 0.5 brute_xyz 10:   ['acc_y_mean' 'acc_z_mean' 'fcc_y_sma' 'acc_y_aad' 'acc_y_std' 'acc_z_sma'
+ 'acc_z_aad' 'acc_z_std' 'nb_step' 'acc_arc'] \n [0.79722729 0.75407898 0.66594123 0.66566434 0.6654374  0.61832242
+ 0.61806935 0.60867483 0.60590992 0.57902847] 
+ 
+ 
+ 
+320   
+  au dessus de 0.5 brute_xyz 13:   ['acc_y_mean' 'acc_z_mean' 'acc_y_std' 'acc_y_aad' 'fcc_y_sma' 'nb_step'
+ 'acc_z_aad' 'acc_z_sma' 'acc_arc' 'acc_z_std' 'acc_x_mean' 'baro_std'
+ 'baro_aad'] \n [0.82272846 0.77844347 0.6965172  0.69471576 0.6945972  0.69058517
+ 0.63714876 0.63168196 0.62843591 0.61426258 0.54755592 0.52210474
+ 0.51775261] 
+ 
+ 
+ 
+400   
+  au dessus de 0.5 brute_xyz 17:   ['acc_y_mean' 'acc_z_mean' 'nb_step' 'fcc_y_sma' 'acc_y_aad' 'acc_y_std'
+ 'acc_z_sma' 'acc_z_aad' 'acc_arc' 'acc_z_std' 'acc_x_mean' 'baro_aad'
+ 'baro_sma' 'baro_std' 'acc_x_std' 'acc_x_aad' 'acc_x_sma'] \n [0.83374899 0.76950495 0.72890348 0.72688725 0.72612925 0.7231354
+ 0.66227796 0.66217815 0.65529542 0.62774033 0.6115744  0.59808535
+ 0.5973474  0.596223   0.52722044 0.51296711 0.51211838] 
+ 
+ 
