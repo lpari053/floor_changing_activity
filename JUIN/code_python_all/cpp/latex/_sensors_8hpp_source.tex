@@ -1,0 +1,90 @@
+\doxysection{Sensors.\+hpp}
+\hypertarget{_sensors_8hpp_source}{}\label{_sensors_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Sensors.hpp}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ SENSORS\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SENSORS\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sensors}{Sensors}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ step;}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ \_acc\_x;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ \_acc\_y;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ \_acc\_z;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{double}\ \_gyro\_x;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ \_gyro\_y;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ \_gyro\_z;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ \_acc\_norm\_nf;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ \_gyro\_norm\_nf;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ \_acc\_norm;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ \_gyro\_norm;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_mag\_x;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ \_mag\_y;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{double}\ \_mag\_z;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ \_mag\_norm\_nf;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ \_mag\_norm;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ baro;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{double}\ \_baro\_norm;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_sensors}{Sensors}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_sensors}{Sensors}}(\textcolor{keywordtype}{int}\ step,\textcolor{keywordtype}{double}\ baro,\textcolor{keywordtype}{double}\ acc\_x,\ \textcolor{keywordtype}{double}\ acc\_y,\ \textcolor{keywordtype}{double}\ acc\_z,\ \textcolor{keywordtype}{double}\ gyro\_x,\ \textcolor{keywordtype}{double}\ gyro\_y,\ \textcolor{keywordtype}{double}\ gyro\_z,\textcolor{keywordtype}{double}\ mag\_x,\ \textcolor{keywordtype}{double}\ mag\_y,\ \textcolor{keywordtype}{double}\ mag\_z);}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_sensors}{\string~Sensors}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_step(\textcolor{keywordtype}{int}\ \_step);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_step()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_baro(\textcolor{keywordtype}{double}\ \_baro);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_baro()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_baro\_norm(\textcolor{keywordtype}{double}\ \_baro\_norm);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_baro\_norm()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Accelerometer}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_acc\_x(\textcolor{keywordtype}{double}\ acc\_x);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_acc\_y(\textcolor{keywordtype}{double}\ acc\_y);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_acc\_z(\textcolor{keywordtype}{double}\ acc\_z);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_acc\_x()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_acc\_y()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_acc\_z()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_acc\_norm(\textcolor{keywordtype}{double}\ acc\_norm);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_acc\_norm()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Gyroscope}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_gyro\_x(\textcolor{keywordtype}{double}\ gyro\_x);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_gyro\_y(\textcolor{keywordtype}{double}\ gyro\_y);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_gyro\_z(\textcolor{keywordtype}{double}\ gyro\_z);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_gyro\_x()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_gyro\_y()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_gyro\_z()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_gyro\_norm(\textcolor{keywordtype}{double}\ gyro\_norm);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_gyro\_norm()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ std::vector<double>\ get\_sensors\_acc\_gyro\_xyz()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ std::vector<double>\ get\_sensors\_acc\_xyz()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ std::vector<double>\ get\_sensors\_gyro\_xyz()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_mag\_x(\textcolor{keywordtype}{double}\ mag\_x);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_mag\_y(\textcolor{keywordtype}{double}\ mag\_y);}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_mag\_z(\textcolor{keywordtype}{double}\ mag\_z);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_mag\_x()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_mag\_y()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_mag\_z()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_mag\_norm(\textcolor{keywordtype}{double}\ mag\_norm);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{double}\ get\_mag\_norm()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::vector<double>\ get\_sensors\_mag\_xyz()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ SENSORS\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

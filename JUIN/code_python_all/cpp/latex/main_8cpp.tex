@@ -1,0 +1,70 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Main program for calculating features from sensor data.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}Sensors.\+hpp"{}}\newline
+{\ttfamily \#include "{}Features\+Calculator.\+hpp"{}}\newline
+{\ttfamily \#include "{}Features.\+hpp"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{main_8cpp_a233792dfb229dfb76da86d95fd5dc81b}{split}} (const std\+::string \&str, char delimiter)
+\begin{DoxyCompactList}\small\item\em Function to split a string into tokens using a specified delimiter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main program for calculating features from sensor data. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Main function of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & An array of pointers to the command-\/line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the program executed successfully, a non-\/zero value in case of error. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a233792dfb229dfb76da86d95fd5dc81b}\index{main.cpp@{main.cpp}!split@{split}}
+\index{split@{split}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{main_8cpp_a233792dfb229dfb76da86d95fd5dc81b} 
+std\+::vector$<$ std\+::string $>$ split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{, }\item[{char}]{delimiter}{}\end{DoxyParamCaption})}
+
+
+
+Function to split a string into tokens using a specified delimiter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to split. \\
+\hline
+{\em delimiter} & The delimiter character used to separate tokens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing the resulting tokens. 
+\end{DoxyReturn}

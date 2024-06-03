@@ -1,0 +1,13 @@
+ 
+ 
+  au dessus de 0.5 27:   ['acc_z_mean' 'gyr_x_mean' 'baro_mean' 'acc_z_std' 'acc_x_aad'
+ 'gyr_x_kurt' 'acc_x_std' 'gyr_z_std' 'gyr_x_std' 'mag_y_mean'
+ 'acc_x_skew' 'mag_z_aad' 'gyr_y_std' 'acc_y_std' 'acc_z_aad' 'acc_y_aad'
+ 'gyr_x_aad' 'baro_aad' 'acc_z_skew' 'gyr_arc' 'mag_arc' 'mag_z_std'
+ 'acc_z_kurt' 'acc_arc' 'baro_std' 'mag_y_std' 'mag_y_aad'] \n [0.6477269  0.63900107 0.62312118 0.61474464 0.60296392 0.58962197
+ 0.58896475 0.58878582 0.57479341 0.56801622 0.56395354 0.56365444
+ 0.55852903 0.55747771 0.55233525 0.55148779 0.54959313 0.54021945
+ 0.53280604 0.52775097 0.52675208 0.50901131 0.50655106 0.50394534
+ 0.50386152 0.50349171 0.50152854] 
+ 
+ 

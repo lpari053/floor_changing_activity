@@ -1,0 +1,15 @@
+    
+ 
+ au dessus de 0.3 27 : Index(['mag_y_kurt', 'mag_y_mean', 'acc_z_std', 'mag_z_std', 'mag_y_aad',
+       'baro_aad', 'acc_x_skew', 'mag_x_aad', 'baro_kurt', 'mag_z_aad',
+       'gyr_x_aad', 'gyr_y_std', 'acc_y_mean', 'acc_x_std', 'gyr_z_aad',
+       'gyr_y_aad', 'acc_x_aad', 'acc_z_aad', 'acc_arc', 'mag_arc',
+       'acc_y_aad', 'baro_mean', 'acc_y_std', 'gyr_arc', 'gyr_x_mean',
+       'acc_z_mean', 'mode_numero'],
+      dtype='object') 
+ [0.30406585 0.3150902  0.32409306 0.32527286 0.33601837 0.34418001
+ 0.35878997 0.36421811 0.3740697  0.37500125 0.38078611 0.38662384
+ 0.39832589 0.40070371 0.40211853 0.41485132 0.42713279 0.43787445
+ 0.46819727 0.48591296 0.50157226 0.50391653 0.51444255 0.52732953
+ 0.58390713 0.60916678 1.        ] 
+ 

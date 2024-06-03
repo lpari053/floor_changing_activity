@@ -1,0 +1,113 @@
+\doxysection{Features\+Calculator.\+hpp}
+\hypertarget{_features_calculator_8hpp_source}{}\label{_features_calculator_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ Features.cpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ labcom}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Yohann\ Tschudi\ on\ 15/02/2022.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ FEATURES\_H\_INCLUDED}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FEATURES\_H\_INCLUDED}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <complex>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <numeric>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <valarray>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}PeakFinder.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}Sensors.hpp"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}Features.hpp"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_features_calculator}{FeaturesCalculator}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Constructor\ and\ destructor}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_features_calculator}{FeaturesCalculator}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_features_calculator}{\string~FeaturesCalculator}}();}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Main\ functions}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}*\ \mbox{\hyperlink{class_features_calculator_af03e30e9ac817978831850b2dd315fb0}{computeSensor}}(\mbox{\hyperlink{class_sensors}{Sensors}}*);}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_features}{Features}}*\ \mbox{\hyperlink{class_features_calculator_ab2c18a9b81a687c4e48b0a97ce83d354}{computeFeatureVertical}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ vector<int>\ \_nb\_step;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ vector<double>\ \_acc\_norm;}
+\DoxyCodeLine{00039\ \ \ \ \ vector<double>\ \_gyro\_norm;}
+\DoxyCodeLine{00040\ \ \ \ \ vector<double>\ \_acc\_norm\_nf;}
+\DoxyCodeLine{00041\ \ \ \ \ vector<double>\ \_gyro\_norm\_nf;}
+\DoxyCodeLine{00042\ \ \ \ \ vector<double>\ \_acc\_x;}
+\DoxyCodeLine{00043\ \ \ \ \ vector<double>\ \_acc\_y;}
+\DoxyCodeLine{00044\ \ \ \ \ vector<double>\ \_acc\_z;}
+\DoxyCodeLine{00045\ \ \ \ \ vector<double>\ \_gyro\_x;}
+\DoxyCodeLine{00046\ \ \ \ \ vector<double>\ \_gyro\_y;}
+\DoxyCodeLine{00047\ \ \ \ \ vector<double>\ \_gyro\_z;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ vector<double>\ \_mag\_x;}
+\DoxyCodeLine{00050\ \ \ \ \ vector<double>\ \_mag\_y;}
+\DoxyCodeLine{00051\ \ \ \ \ vector<double>\ \_mag\_z;}
+\DoxyCodeLine{00052\ \ \ \ \ vector<double>\ \_mag\_norm;}
+\DoxyCodeLine{00053\ \ \ \ \ vector<double>\ \_mag\_norm\_nf;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ vector<double>\ \_baro;}
+\DoxyCodeLine{00056\ \ \ \ \ vector<double>\ \_baro\_norm;}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ rotateAndInsert(vector<int>\&,\ \textcolor{keywordtype}{double},\textcolor{keywordtype}{int},\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ rotateAndInsert(vector<double>\&,\ \textcolor{keywordtype}{double});}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ rotateAndInsert(vector<int>\&,\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00061\ \ \ \ \ vector<double>\ scalarProduct(\textcolor{keyword}{const}\ vector<double>\&,\ \textcolor{keywordtype}{double});}
+\DoxyCodeLine{00062\ \ \ \ \ vector<double>\ extractVector(\textcolor{keyword}{const}\ vector<double>\&,\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00063\ \ \ \ \ vector<double>\ Insert(vector<double>\&,\ \textcolor{keywordtype}{double});}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{double}\ computeNorm(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{double}\ computeNorm(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ ,\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ ,\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ );}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{double}\ computeVariance(\textcolor{keyword}{const}\ vector<double>\&,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&,\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ vector<double>\ normalization(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ vector<double>\ cutVector(\textcolor{keyword}{const}\ vector<double>\&,\textcolor{keywordtype}{double});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ fft\_first\_peak\_index(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{double}\ mean(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{double}\ median(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{double}\ median\_absolute\_deviation(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{double}\ std(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{double}\ mad(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{double}\ arc(\textcolor{keyword}{const}\ vector<double>\&,\textcolor{keyword}{const}\ vector<double>\&,\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{double}\ aad(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{double}\ kurtosis(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{double}\ moyenneSecondHalf(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{double}\ moyennePremierHalf(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{double}\ differenceMeanHalf(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{double}\ rms(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{double}\ calculerPente(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{double}\ skewness(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{double}\ pc(\textcolor{keyword}{const}\ vector<double>\&);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FEATURES\_H\_INCLUDED}}
+
+\end{DoxyCode}

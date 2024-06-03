@@ -1,0 +1,7 @@
+  
+  
+ 
+au dessus de 0.020 
+ : 10 : ['acc_x_mean', 'acc_y_aad', 'acc_y_std', 'acc_z_mean', 'acc_z_std', 'acc_z_kurt', 'gyr_z_mean', 'mag_x_std', 'mag_y_skew', 'nb_step'] \n [0.04726391 0.02511049 0.0248998  0.17786842 0.17828643 0.04645876
+ 0.09951252 0.06104927 0.07067341 0.02690562] 
+ 
