@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Choose Sensor" >
+        <CheckBoxPreference
+            android:key="acc_checkbox"
+            android:summary="x,y,z m/s2"
+            android:title="Accelerometer" />
+        <CheckBoxPreference
+            android:key="gyro_checkbox"
+            android:summary="x,y,z rad/s"
+            android:title="Gyroscope"
+            />
+        <CheckBoxPreference
+            android:key="mag_checkbox"
+            android:summary="x,y,z μT"
+            android:title="Magnetometer" />
+        <CheckBoxPreference
+            android:key="modet_checkbox"
+            android:summary="Type,confidence"
+            android:title="Motion detection" />
+        <CheckBoxPreference
+            android:key="step_checkbox"
+            android:summary="Number of steps"
+            android:title="Step detection" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="uncalib_switch"
+            android:summary="Click to switch on or off"
+            android:title="Record uncalibrated data" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Advanced Settings">
+        <CheckBoxPreference
+            android:key="samprate_checkbox"
+            android:summary="Check to record with highest sampling rate possible"
+            android:title="Sampling rate" />
+        <ListPreference
+            android:dialogTitle="Select Subject"
+            android:entries="@array/settings_list_preference_titles"
+            android:entryValues="@array/settings_list_preference_values"
+            android:key="subj_list"
+            android:summary="Click to show a list to choose from"
+            android:title="Choose subject" />
+        <EditTextPreference
+            android:dialogTitle="Enter a text"
+            android:key="auto_text"
+            android:summary="Enter recording duration"
+            android:title="Use Automation" />
+        <SeekBarPreference
+            android:key="seekbar"
+            android:title="Seek bar!"
+            android:max="10"
+            android:defaultValue="5" />
+    </PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

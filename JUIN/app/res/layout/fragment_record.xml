@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_record"
+    android:keepScreenOn="true"
+    tools:context="fr.univeiffel.geolocimu.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/displayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tvNumberStep"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_shp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="NumberStep"
+                app:drawableLeftCompat="@drawable/ic_noun_shoe_prints_1424027" />
+
+            <Chronometer
+                android:id="@+id/c_meter"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_noun_clock_1012831"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#696969"
+                android:background="@drawable/rounded_shp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <ImageButton
+                android:id="@+id/btStart"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_shp"
+                android:src="@drawable/rec_btn"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/btStop"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_shp"
+                android:src="@drawable/stop_btn"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fileNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/fileNameTv"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

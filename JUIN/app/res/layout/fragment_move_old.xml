@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context="fr.univeiffel.geolocimu.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/chronoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Chronometer
+                android:id="@+id/c_meter_smart_loc"
+                android:layout_width="300sp"
+                android:layout_height="65sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_noun_clock_1012831"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/rounded_shp" />
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/modGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:alignmentMode="alignBounds"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:useDefaultMargins="true"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/btWalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:background="@drawable/rounded_shp"
+                android:padding="5dp"
+                android:src="@drawable/ic_noun_walk_4732498" />
+
+            <ImageView
+                android:id="@+id/btRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_run_1651221" />
+
+            <ImageView
+                android:id="@+id/btStairs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_shp"
+                android:src="@drawable/ic_noun_stairs_63040" />
+
+            <ImageView
+                android:id="@+id/btBike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_bike_1720158" />
+
+            <ImageView
+                android:id="@+id/btScoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_scooter_4516591" />
+
+            <ImageView
+                android:id="@+id/btEscalator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_escalator_130349" />
+
+            <ImageView
+                android:id="@+id/btCar"
+                android:layout_width="wrap_content"
+                android:layout_height="134dp"
+                android:layout_margin="10sp"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_car_1733330" />
+
+            <ImageView
+                android:id="@+id/btBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_bus_1307408" />
+
+            <ImageView
+                android:id="@+id/btInterrogation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_shp"
+                android:padding="5sp"
+                android:src="@drawable/ic_noun_interrogation_1110736" />
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <ImageButton
+                android:id="@+id/btStartMove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/rounded_shp"
+                android:src="@drawable/rec_btn"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/btStopMove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/rounded_shp"
+                android:src="@drawable/stop_btn"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <dimen name="top_marge">80dp</dimen>
+        <dimen name="nope">0dp</dimen>
+        <dimen name="elevation">2dp</dimen>
+        <dimen name="button_width">150dp</dimen>
+</resources>
